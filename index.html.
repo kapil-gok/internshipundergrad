@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>InternshipUndergrad.com</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f4f4;
+    }
+    header {
+      background-color: #1a73e8;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+    section {
+      padding: 2rem;
+      max-width: 800px;
+      margin: auto;
+      background: white;
+      margin-top: 1rem;
+      border-radius: 10px;
+    }
+    h2 {
+      color: #1a73e8;
+    }
+    .button {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 10px 20px;
+      background: #1a73e8;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+    footer {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>InternshipUndergrad.com</h1>
+    <p>Connecting Students and Companies Across India</p>
+  </header>
+
+  <section>
+    <h2>🎓 Students – Find Internships</h2>
+    <p>Search for internships in finance, tech, pharma & more. Upload your resume and get noticed!</p>
+    <a href="https://forms.gle/YOUR_GOOGLE_FORM_LINK" class="button">Upload Resume</a>
+  </section>
+
+  <section>
+    <h2>🏢 Companies – Hire Interns</h2>
+    <p>Register and list your internship opportunity (₹5,000 per post).</p>
+    <a href="https://forms.gle/YOUR_COMPANY_FORM_LINK" class="button">Post an Internship</a>
+  </section>
+
+  <section>
+    <h2>🌟 Premium Student Plans</h2>
+    <ul>
+      <li>₹99 – Basic Boost</li>
+      <li>₹199 – Updated Boost</li>
+      <li>₹399 – 3-month Boost (resume seen first by companies)</li>
+    </ul>
+    <p>Pay via Google Pay UPI ID: <strong>kapilgoklani16-1@oksbi</strong></p>
+    <a href="https://forms.gle/YOUR_PREMIUM_VERIFICATION_FORM" class="button">Submit Payment Details</a>
+  </section>
+
+  <section>
+    <h2>🔐 Admin Panel</h2>
+    <a href="admin.html" class="button">Go to Admin</a>
+  </section>
+
+  <footer>
+    &copy; 2025 InternshipUndergrad.com
+  </footer>
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Admin Panel</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 2rem;
+      background-color: #f4f4f4;
+    }
+    #login {
+      max-width: 400px;
+      margin: auto;
+      text-align: center;
+    }
+    input[type="password"] {
+      padding: 0.5rem;
+      width: 80%;
+      margin-bottom: 1rem;
+    }
+    .hidden {
+      display: none;
+    }
+    .content {
+      background: white;
+      padding: 2rem;
+      border-radius: 10px;
+      margin-top: 1rem;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="login">
+    <h2>Enter Admin Password</h2>
+    <input type="password" id="adminPass" placeholder="Enter password">
+    <br>
+    <button onclick="checkPassword()">Login</button>
+  </div>
+
+  <div id="adminContent" class="hidden content">
+    <h2>✅ Admin Dashboard</h2>
+    <p>Check form responses and approve students manually.</p>
+    <p>1. Open student form responses in Google Forms.</p>
+    <p>2. Cross-verify payment and give access accordingly.</p>
+    <a href="https://docs.google.com/forms/d/YOUR_RESPONSE_FORM" target="_blank">View Student Submissions</a>
+  </div>
+
+  <script>
+    function checkPassword() {
+      const pass = document.getElementById("adminPass").value;
+      if (pass === "verify876goplanyaccess") {
+        document.getElementById("login").style.display = "none";
+        document.getElementById("adminContent").classList.remove("hidden");
+      } else {
+        alert("Incorrect password!");
+      }
+    }
+  </script>
+
+</body>
+</html>
